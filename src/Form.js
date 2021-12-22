@@ -100,7 +100,7 @@ export class Form extends Component {
           value={this.state.isChecked}
           onChange={this.handleChange}
         />
-        <p>{this.state.isChecked ? "Yes, I have confirmed my Choices" : null}</p>
+        <p style={{ textDecoration: this.state.isChecked ? "none" : "line-through" }}>Yes, I have confirmed my Choices</p>
       </div>
     )
   }
